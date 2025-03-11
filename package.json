@@ -1,0 +1,76 @@
+{
+    "name": "express-mongoose-generator",
+    "version": "3.1.0",
+    "description": "It’s a mongoose model, REST controller and Express router code generator for Express.js 4 application",
+    "author": "Damien Perrier <damienperrier33@gmail.com>",
+    "contributors": [
+        {
+            "name": "romuloctba"
+        },
+        {
+            "name": "abks90"
+        },
+        {
+            "name": "hudsonburgess"
+        },
+        {
+            "name": "ihatem"
+        },
+        {
+            "name": "eumend"
+        }
+    ],
+    "keywords": [
+        "mongodb",
+        "mongoose",
+        "express",
+        "generator",
+        "rest",
+        "restfull",
+        "api",
+        "app",
+        "web"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/DamienP33/express-mongoose-generator.git"
+    },
+    "main": "bin/mongoose-gen",
+    "scripts": {
+        "test": "mocha --reporter spec --bail --check-leaks test/",
+        "lint": "jshint ./**/*.js ./bin/mongoose-gen"
+    },
+    "engines": {
+        "node": ">= 0.10.0"
+    },
+    "license": "MIT",
+    "preferGlobal": true,
+    "bin": {
+        "mongoose-gen": "bin/mongoose-gen"
+    },
+    "dependencies": {
+        "async": "^0.9.0",
+        "commander": "^2.5.0"
+    },
+    "devDependencies": {
+        "jshint": "^2.8.0",
+        "mkdirp": "^0.5.0",
+        "mocha": "^8.3.2",
+        "nexpect": "^0.4.2",
+        "rimraf": "^2.2.8"
+    },
+    "files": [
+        "LICENSE",
+        "bin/",
+        "templates/",
+        "lib/"
+    ],
+    "directories": {
+        "lib": "lib",
+        "test": "test"
+    },
+    "bugs": {
+        "url": "https://github.com/DamienP33/express-mongoose-generator/issues"
+    },
+    "homepage": "https://github.com/DamienP33/express-mongoose-generator#readme"
+}
