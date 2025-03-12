@@ -18,16 +18,7 @@ module.exports = {
         catch (e) {
     return res.json({ "message": "error", e }).status(200);
 }
-        // {modelName}.find(function (err, {pluralName}) {
-        //     if (err) {
-        //         return res.status(500).json({
-        //             message: 'Error when getting {name}.',
-        //             error: err
-        //         });
-        //     }
-
-        //     return res.json({pluralName});
-        // });
+      
     },
 
 /**
@@ -48,22 +39,7 @@ show: async function (req, res) {
             error: err.message
         });
     }
-    // { modelName }.findOne({ _id: id }, function (err, { name }) {
-    //     if (err) {
-    //         return res.status(500).json({
-    //             message: 'Error when getting {name}.',
-    //             error: err
-    //         });
-    //     }
-
-    //     if (!{ name }) {
-    //         return res.status(404).json({
-    //             message: 'No such {name}'
-    //         });
-    //     }
-
-    //     return res.json({ name });
-    // });
+ 
 },
 
 /**
@@ -80,19 +56,7 @@ create: async function (req, res) {
             error: err.message
         });
     }
-    //     const { name } = new { modelName }({{ createFields }
-    //         });
 
-    // { name }.save(function (err, { name }) {
-    //     if (err) {
-    //         return res.status(500).json({
-    //             message: 'Error when creating {name}',
-    //             error: err
-    //         });
-    //     }
-
-    //     return res.status(201).json({ name });
-    // });
 },
 
 /**
